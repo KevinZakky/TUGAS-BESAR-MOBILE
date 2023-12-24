@@ -8,12 +8,16 @@ class AppPages {
   AppPages._();
 
   static const INTRO = Routes.INTRO;
-  // static const HOME = Routes.HOME;
+  static const HOME = Routes.HOME;
 
   static final routes = [
     GetPage(
       name: _Paths.INTRO,
       page: () => IntroPage(),
+    ),
+    GetPage(
+      name: _Paths.HOME,
+      page: () => const HomePage(),
     ),
   ];
 }
